@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>More</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/zerogrid.css" type="text/css" media="all">
+	 <link rel="stylesheet" href="../../css/responsive.css" type="text/css" media="all">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-migrate-1.1.1.js"></script>
+    <script src="../../js/bgstretcher.js"></script>
+	<script type="text/javascript" src="../../js/css3-mediaqueries.js"></script>
+    <script>
+	$(function(){
+      //  Initialize Backgound Stretcher
+      $('BODY').bgStretcher({
+        images: ['../../images/slide-1.jpg'], 
+		imageWidth: 1600, 
+		imageHeight: 964, 
+		resizeProportionally:true	
+       });	
+    });
+    </script>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc; width: 100%}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif; text-align: left; font-size:18px;font-weight:bold;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-4eph{background-color:#f9f9f9}
+</style>
+  
+
+    </head>
+    <body>
+<div class="extra-block"> 
+      <!--==============================row-top=================================-->
+      <div class="row-top">
+    <div class="main zerogrid">
+          <ul class="list-soc">
+        <li><a href="#"><img alt="" src="../../images/soc-icon1.png"></a></li>
+        <li><a href="#"><img alt="" src="../../images/soc-icon2.png"></a></li>
+      </ul>
+        </div>
+  </div>
+      
+      <!--==============================header=================================-->
+      
+      <header>
+    <div class="row-nav">
+        <div class="main zerogrid">
+        <h1 class="logo"><a href="../../index.html"><img alt="Eni Gma" src="../../images/logo.png"></a></h1>
+        <nav>
+          <ul class="menu">
+            <li class="current"><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#practicas">Prácticas</a></li>
+            <li><a href="http://www.github.com/rubiles">GitHub</a></li>
+            <li><a href="#">JSFiddle</a></li>
+            <li><a href="#">Portafolio</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      </div>
+  </header>
+  <!--==============================content=================================-->
+    <section >
+       <div class="main" style="padding:30px; width:60%; margin:10% auto; ">
+       <h3>Práctica 1: Clase Subir</h3>         
+       <form action="procesa.php" method="post" enctype="multipart/form-data">
+		<table class="tg">
+                    <fieldset>
+                         <tr><th  colspan="2">Ruta y Nombre</th></tr>
+                        <tr>
+				<td>	<label for="nombre">Nombre del Archivo: </label>		</td>
+				<td>	<input type="text" id="nombre" name="nombre" placeholder="nombre para el archivo"/>             </td>
+			</tr>
+                        <tr>
+				<td>	<label for="destino">Destino del Archivo: </label>		</td>
+				<td>	<input type="text" id="destino" name="destino" placeholder="Nombre de la nueva carpeta"/>             </td>
+			</tr>
+                        <tr>
+				<td>   <label for="crear">Crear Carpeta si no Existe: </label>	</td>
+				<td>	 <input type="radio" id="crear" name="radioCrear" value="si"/>Si
+                                         <input type="radio" id="crear" name="radioCrear" value="no" checked/>No
+                                </td>
+			</tr>
+                          <tr><th  colspan="2" >Selección de Archivo</th></tr>
+			<tr>
+				<td>   <label for="archivo">Archivos: </label>	</td>
+				<td>	<input type="file" id="archivo" name="archivo[]"  multiple="multiple"/></td>
+			</tr>
+			<tr>
+				<td>   <label for="accion1">Acción: </label>	</td>
+				<td>	 <input type="radio" id="accion1" name="radio" value="Reemplazar"/>Reemplazar
+                                         <input type="radio" id="accion2" name="radio" value="Renombrar" />Renombrar 
+                                </td>
+			</tr>
+                        
+                    </fieldset>
+                     <table class="tg">
+                              <tr>
+                                <th class="tg-031e" colspan="5">Selección de Extensiones Válidas</th>
+                              </tr>
+                              <tr>
+                                <td class="tg-031e">
+                                    <input type="checkbox" name="extensiones[]" value="application/excel xls"/> application/excel    .xls
+                                    
+                                </td>
+                                <td class="tg-4eph">
+                                     <input type="checkbox" name="extensiones[]" value="application/mspowerpoint ppt"/> application/mspowerpoint    .ppt
+                                     
+                                   	</td>
+                                <td class="tg-031e">
+                                     <input type="checkbox" name="extensiones[]" value="application/msword docx"/> application/msword	.docx
+                                    
+                                     </td>
+                                <td class="tg-4eph">
+                                     <input type="checkbox" name="extensiones[]" value="application/msword doc"/> application/msword	.doc
+                                     
+                                    </td>
+                                <td class="tg-031e">
+                                     <input type="checkbox" name="extensiones[]" value="application/pdf pdf"/>  application/pdf	.pdf
+                                     
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="tg-031e">
+                                      <input type="checkbox" name="extensiones[]" value="application/x-rar-compressed rar"/>  application/x-rar-compressed	.rar
+                                     
+                                   </td>
+                                <td class="tg-4eph">
+                                     <input type="checkbox" name="extensiones[]" value="application/x-compressed zip"/>    application/x-compressed	.zip
+                                    
+                               </td>
+                                <td class="tg-031e">  
+                                    <input type="checkbox" name="extensiones[]" value="text/plain txt"/>  text/plain	.txt
+                                     
+                                    </td>
+                                <td class="tg-4eph">
+                                     <input type="checkbox" name="extensiones[]" value="text/css css"/>  text/css	.css
+                                     
+                                    </td>
+                                <td class="tg-031e">
+                                          <input type="checkbox" name="extensiones[]" value="text/html html"/>  text/html	.html
+                                    
+                                </td>
+                              </tr>
+                              
+                              <tr>
+                                <td class="tg-031e">
+                                      <input type="checkbox" name="extensiones[]" value="image/jpeg jpg"/>  image/jpeg	.jpg
+                                    
+                                   </td>
+                                <td class="tg-4eph">
+                                     <input type="checkbox" name="extensiones[]" value="image/gif gif"/>    image/gif	.gif
+                                    
+                               </td>
+                                <td class="tg-031e">  
+                                    <input type="checkbox" name="extensiones[]" value="image/png png"/>  image/png	.png
+                                     
+                             
+                                    </td>
+                                <td class="tg-4eph">
+                                     <input type="checkbox" name="extensiones[]" value="video/mpeg mpg"/>  video/mpeg	.mpg
+                                     
+                                    </td>
+                                <td class="tg-031e">
+                                          <input type="checkbox" name="extensiones[]" value="video/msvideo avi"/>  video/msvideo	.avi
+                                     
+                                </td>
+                              </tr>
+                              
+                     </table>
+                            <tr><td colspan="2" > <input style="width:100%" type="submit" /></td></tr>
+		</table>
+        </form>
+     </div>
+  </div>  
+
+<div class="block"> 
+      <!--==============================footer================================-->
+       <footer>
+    <div class="main aligncenter zerogrid">
+        <div class="main aligncenter zerogrid">
+        <div class="privacy">Carlos Rubí GT <span>|</span> <strong>Free Html5 Templates designed by TemplateMonster  Zerotheme</strong> </div>
+        </div>
+  </footer>
+    </div>
+</body>
+</html>
